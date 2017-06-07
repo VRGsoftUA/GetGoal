@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Get Habit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unfortunately_you_missed_the_day">Purtroppo, tu sei perso il giorno</string>
+    <string name="the_habit_is_formed_on_day_21_and_what_previously_required_the_effort_becomes_already_easy_and_familiar_only_daily_performance_will_create_a_strong_habit_ncreate_a_new_habit_by_clicking_on_the_button_below">L\'abitudine è formata in 21 giorno ,e che richiesto  sforzi  in precedenza diventa facile e familiare. Solo performance giornaliera esecuzione creerà un\'abitudine forte. Creare un nuovo obiettivo è possibile per  fare un clic sul pulsante sotto.</string>
+    <string name="create_a_new_habit">Creare una nuova abitudine</string>
+    <string name="congratulations_on_your_new_habit">Complimenti per la tua nuova abitudine</string>
+    <string name="remember_that_you_need_to_create_good_habits_first_of_all_to_yourself_and_secondly_to_others_on_which_you_can_influence">Ricordate che è necessario creare buone abitudini: prima di tutto a se stessi, e in secondo luogo - per gli altri, su cui si può influenzare.</string>
+    <string name="habit_name">Nome di abitudine</string>
+    <string name="question_did_you_today">Domanda (hai fatto ... oggi?)</string>
+    <string name="save">Salvare</string>
+    <string name="notification_time">Tempo di notifica:</string>
+    <string name="new_habit">NUOVA ABITUDINE</string>
+    <string name="my_goals">I miei obiettivi</string>
+    <string name="yes">Si</string>
+    <string name="check_your_habbit">VERIFICARE Abitudine</string>
+    <string name="remove_ads">Rimuovere gli annunci</string>
+
+    <string-array name="themesNames">
+        <item>Salute e fitness</item>
+        <item>I soldi</item>
+        <item>Auto-miglioramento</item>
+        <item>Sesso e incontri</item>
+        <item>Lavoro e studio</item>
+        <item>Arts</item>
+        <item>Sociale</item>
+        <item>Faccende domestiche</item>
+        <item>Altre</item>
+    </string-array>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="goal"
+            type="com.vrgsoft.mygoal.data.db.alerts.Goal" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_back" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context="com.vrgsoft.mygoal.presentation.main.addhabit.AddHabitActivity">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin_double"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/constraint_padding">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/habitName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/habit_text_margin"
+                        android:layout_marginLeft="@dimen/habit_text_margin"
+                        android:layout_marginRight="@dimen/habit_text_margin"
+                        android:layout_marginStart="@dimen/habit_text_margin"
+                        android:layout_marginTop="@dimen/habit_margin_top"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/habit_name"
+                            android:text="@{goal.MName}" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/habitDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/habit_text_margin"
+                        android:layout_marginLeft="@dimen/habit_text_margin"
+                        android:layout_marginRight="@dimen/habit_text_margin"
+                        android:layout_marginStart="@dimen/habit_text_margin"
+                        android:layout_marginTop="@dimen/habit_descr_mrg_top"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/habitName">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/question_did_you_today"
+                            android:text="@{goal.MDescr}" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/habit_checkbox_height"
+                        android:layout_marginBottom="@dimen/habit_text_margin"
+                        android:layout_marginLeft="@dimen/habit_text_margin"
+                        android:layout_marginRight="@dimen/habit_text_margin"
+                        android:checked="true"
+                        app:buttonTint="@android:color/holo_orange_light"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/tvNotifyTime"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <Button
+                        android:id="@+id/saveHabit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/save_button_height"
+                        android:layout_marginBottom="@dimen/save_habit_margin_bot"
+                        android:layout_marginEnd="@dimen/habit_text_margin"
+                        android:layout_marginLeft="@dimen/habit_text_margin"
+                        android:layout_marginRight="@dimen/habit_text_margin"
+                        android:layout_marginStart="@dimen/habit_text_margin"
+                        android:layout_marginTop="@dimen/habit_text_margin"
+                        android:background="@drawable/bt_drawable"
+                        android:text="@string/save"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNotifyTime"
+                        app:layout_constraintVertical_bias="0.69" />
+
+                    <TextView
+                        android:id="@+id/tvNotifyTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/habit_text_margin"
+                        android:layout_marginRight="@dimen/habit_text_margin"
+                        android:text="@string/notification_time"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/notifyTime"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.508" />
+
+                    <TextView
+                        android:id="@+id/notifyTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/habit_text_margin"
+                        android:layout_marginEnd="@dimen/habit_text_margin"
+                        android:layout_marginLeft="@dimen/habit_text_margin"
+
+                        android:layout_marginRight="@dimen/habit_text_margin"
+                        android:layout_marginStart="@dimen/habit_text_margin"
+                        android:layout_marginTop="@dimen/habit_text_margin"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="23:26" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/habit_text_margin"
+                android:layout_marginStart="@dimen/habit_text_margin"
+                android:layout_marginTop="@dimen/habit_text_margin"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintHorizontal_bias="0.177"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/habbitTv"
+                app:layout_constraintTop_toTopOf="@+id/habbitTv"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/emoji"
+                    android:layout_width="@dimen/emoji_size"
+                    android:layout_height="@dimen/emoji_size"
+                    app:srcCompat="@drawable/ic_collections"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="25dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/habbitTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/habit_text_margin"
+                android:layout_marginEnd="@dimen/habit_text_margin"
+                android:layout_marginLeft="@dimen/margin_halved"
+                android:layout_marginRight="@dimen/habit_text_margin"
+                android:layout_marginStart="@dimen/margin_halved"
+                android:layout_marginTop="@dimen/habit_text_margin"
+                android:text="@string/new_habit"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+</layout>

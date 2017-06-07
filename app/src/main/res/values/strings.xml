@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Get Habit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unfortunately_you_missed_the_day">Unfortunately, you missed the day</string>
+    <string name="the_habit_is_formed_on_day_21_and_what_previously_required_the_effort_becomes_already_easy_and_familiar_only_daily_performance_will_create_a_strong_habit_ncreate_a_new_habit_by_clicking_on_the_button_below">The habit is formed on day 21, and what previously required the effort becomes already easy and familiar. Only daily performance will create a strong habit.  Create a new habit by clicking on the button below</string>
+    <string name="create_a_new_habit">Create a new habit</string>
+    <string name="congratulations_on_your_new_habit">Congratulations on your new habit</string>
+    <string name="remember_that_you_need_to_create_good_habits_first_of_all_to_yourself_and_secondly_to_others_on_which_you_can_influence">Remember that you need to create good habits: first of all to yourself, and secondly - to others, on which you can influence.</string>
+    <string name="habit_name">Habit name</string>
+    <string name="question_did_you_today">Question (Did you...today?</string>
+    <string name="save">Save</string>
+    <string name="notification_time">Notification time:</string>
+    <string name="new_habit">NEW HABIT</string>
+    <string name="my_goals">My Goals</string>
+    <string name="yes">Yes</string>
+    <string name="check_your_habbit">CHECK YOUR HABBIT</string>
+    <string name="remove_ads">Remove ads</string>
+    <string name="none">none</string>
+
+    <string-array name="themesNames">
+        <item>Health and Fitness</item>
+        <item>Money</item>
+        <item>Self Improvement</item>
+        <item>Sex and dating</item>
+        <item>Work and Study</item>
+        <item>Arts</item>
+        <item>Social</item>
+        <item>Housekeeping</item>
+        <item>Other</item>
+    </string-array>
+</resources>

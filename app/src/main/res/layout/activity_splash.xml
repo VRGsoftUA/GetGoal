@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vrgsoft.mygoal.presentation.main.SplashActivity">
+
+    <ImageView
+        android:id="@+id/iv_cirlce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/big_image_margin"
+        android:layout_marginEnd="@dimen/big_image_margin"
+        android:layout_marginLeft="@dimen/big_image_margin"
+        android:layout_marginRight="@dimen/big_image_margin"
+        android:layout_marginStart="@dimen/big_image_margin"
+        android:layout_marginTop="@dimen/big_image_margin"
+        android:src="@drawable/move_back" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_splash" />
+
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="pictures">
+        <item>@drawable/healthy_icon</item>
+        <item>@drawable/money_icon</item>
+        <item>@drawable/self_improvment_icon</item>
+        <item>@drawable/sex_dating_icon</item>
+        <item>@drawable/work_and_study_icon</item>
+        <item>@drawable/arts_icon</item>
+        <item>@drawable/social_icon</item>
+        <item>@drawable/home_icon</item>
+        <item>@drawable/other_icon</item>
+    </integer-array>
+</resources>

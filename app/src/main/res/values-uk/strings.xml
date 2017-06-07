@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Get Habit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unfortunately_you_missed_the_day">На жаль, Ви пропустили день</string>
+    <string name="the_habit_is_formed_on_day_21_and_what_previously_required_the_effort_becomes_already_easy_and_familiar_only_daily_performance_will_create_a_strong_habit_ncreate_a_new_habit_by_clicking_on_the_button_below">Звичка формується за 21 день і те що раніше викликало труднощі, стає легким та знайомим. Тільки щоденне виконання формує сильну звичку. Сворити нову ціль Ви можете натиснувши на кнопку нижче.</string>
+    <string name="create_a_new_habit">Створити нову звичку</string>
+    <string name="congratulations_on_your_new_habit">Вітаємо, у Вас нова звичка</string>
+    <string name="remember_that_you_need_to_create_good_habits_first_of_all_to_yourself_and_secondly_to_others_on_which_you_can_influence">Пам\'ятайте, що потрібно створювати тільки хороші звички: перш за все для себе, потім - для інших людей, на яких Ви можете впливати.</string>
+    <string name="habit_name">Назва звички</string>
+    <string name="question_did_you_today">Питання (Чи ...сьогодні?</string>
+    <string name="save">Зберегти</string>
+    <string name="notification_time">Час оповіщення:</string>
+    <string name="new_habit">НОВА ЗВИЧКА</string>
+    <string name="my_goals">Мої цілі</string>
+    <string name="yes">Так</string>
+    <string name="check_your_habbit">Відзначити досягнення</string>
+    <string name="remove_ads">Вимкнути рекламу</string>
+
+    <string-array name="themesNames">
+        <item>Здоров\'я і фітнес</item>
+        <item>Гроші</item>
+        <item>Саморозвиток</item>
+        <item>Секс і побачення</item>
+        <item>Робота і навчання</item>
+        <item>Мистецтво</item>
+        <item>Соціальне</item>
+        <item>Домогосподарство</item>
+        <item>Інше</item>
+    </string-array>
+</resources>
