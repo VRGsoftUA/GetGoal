@@ -5,6 +5,9 @@ Our professionals know how to compose Cloud technologies and Internet of Things 
 
 First open source simple project to get your own goal
 
+Stack technology:
+Dagger2 + Rx2 + Realm using Clean architecture 
+
 #### [HIRE US](http://vrgsoft.net/)
 #### Download 
 *  [Download APK from here](https://play.google.com/store/apps/details?id=com.vrgsoft.mygoal)
